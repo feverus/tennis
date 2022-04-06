@@ -1,0 +1,203 @@
+.block {
+    display: block;
+    z-index: 1;
+}
+.none {
+    display: none;
+}
+
+
+button {
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+    color: #fff;
+    display:block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 8px 16px;
+    margin: 20px auto;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: background-color 0.1s linear;
+    -moz-transition: background-color 0.1s linear;
+    -o-transition: background-color 0.1s linear;
+    transition: background-color 0.1s linear; 
+    background-color: rgb( 43, 153, 91 );
+    border: 1px solid rgb( 33, 126, 74 );         
+}
+button:hover {
+    background-color: rgb( 75, 183, 141 );
+}
+
+
+input{
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    max-width: 100%;
+}
+input:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(158 158 158 / 25%);
+}
+
+.inputs {
+    text-align: center;
+    z-index: 10;
+    position: fixed;
+    top: 74px;
+}
+.inputs>div {
+    max-width: 166px;
+    width: 50%;
+}
+.compare>.allTable>.head {
+    margin-top: 112px;
+}
+
+.compare .inputs>div:nth-child(1) {
+    margin-right: 5px;
+}
+.compare .inputs>div:nth-child(2) {
+    margin-left: 5px;
+}
+
+a {
+    text-decoration-line: none;
+    font-weight: bold;    
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+.main>.progress {
+    background-color: #2b995b3d;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5em 1em -0.125em #0a0a0a73, 0 0 0 1px rgb(10 10 10 / 4%);
+    color: #3a3a3a;
+    margin: 5px 0 10px 0;
+    padding: 10px;   
+}
+.head, .card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;    
+}
+.card {
+    border-bottom: 1px solid #00000052;
+}
+.head {
+    padding-top: 10px;
+    max-width: 342px;
+    z-index: 1;
+}
+.head>div, .card>div {
+    padding: 2px;
+    width: 50px;
+}
+.topFixed, .secondFixed {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+}
+.topFixed {
+    top: 0;
+    height: 74px;
+}
+.secondFixed {
+    top: 74px;  
+    height: 65px  
+}
+
+.allTable {
+    max-width: 342px;
+}
+.allList>.allTable {
+    margin-top: 132px;
+}
+.compare>.allTable {
+    margin-top: 74px;
+}
+.head, .line {
+    background-color: #eee;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5em 1em -0.125em #0a0a0a73, 0 0 0 1px rgb(10 10 10 / 22%);
+    color: #111;
+    margin: 5px auto 0 auto;
+    padding: 3px 0;
+}
+.player {
+    text-align: center;
+    width: 100%!important;
+}
+.period {
+    background-color: #c7c7c7;
+    width: 60px!important;
+}
+.rate {
+    background-color: #d1d1d1;
+    flex: 1;
+}
+
+.all, .indoors, .clay, .grass, .hard, .notset {
+    text-align: center;
+}
+.all, .clay, .grass, .hard, .notset {
+    width: 30px!important;
+}
+.all {
+    background-color: #8f8aff;
+}
+.indoors {
+    background-color: #cc83b4;
+}
+.clay {
+    background-color: #c75d5d;
+}
+.grass {
+    background-color: #5dc273;
+}
+.hard {
+    background-color: #6cafce;
+}
+.notset {
+    background-color: #d7e058;
+}
+.green {
+    background-color: #3ab459;
+}
+.red {
+    background-color: #ff7878;
+}
+
+
+@media (max-width: 500px) {
+    .allTable, .progress {
+        max-width: 340px;
+    }
+}
+
+

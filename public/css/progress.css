@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+
+.update-bar {
+  max-width: 600px;
+  width: 90vw;
+  margin: 10px auto;
+}
+.update-bar .progressbar-update-bar {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #0a0a0a73;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.update-bar .progressbar-update-bar .progressbar-complete {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  height: 100%;
+  background-color: #5225bd;
+  border-radius: 10px;
+  animation: g 3000ms infinite ease-in-out;
+  z-index: 2;
+}
+.update-bar .progressbar-update-bar .progressbar-complete .progressbar-liquid {
+  z-index: 1;
+  width: 70px;
+  height: 70px;
+  animation: g 3000ms infinite ease-in-out, r 6000ms infinite cubic-bezier(0.5, 0.5, 0.5, 0.5);
+  position: absolute;
+  right: -5px;
+  top: -10px;
+  background-color: #5225bd;
+  border-radius: 40%;
+}
+.update-bar .progressbar-update-bar .progress {
+  z-index: 2;
+  text-shadow: 0px 0px 2px #ffffff73;
+  font-weight: bold;
+}
+
+@keyframes g {
+  0% {
+    background-color: #50d050;
+  }
+  50% {
+    background-color: #5050d0;
+  }
+  100% {
+    background-color: #50d050;
+  }
+}
+@keyframes r {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
