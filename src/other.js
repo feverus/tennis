@@ -1,6 +1,6 @@
 export function translit(word) {
-	var answer = '';
-	var converter = {
+	let answer = ''
+	let converter = {
 		'а': 'a',    'б': 'b',    'в': 'v',    'г': 'g',    'д': 'd',
 		'е': 'e',    'ё': 'e',    'ж': 'zh',   'з': 'z',    'и': 'i',
 		'й': 'y',    'к': 'k',    'л': 'l',    'м': 'm',    'н': 'n',
@@ -16,12 +16,8 @@ export function translit(word) {
 		'Ш': 'Sh',   'Щ': 'Sch',  'Ь': '',     'Ы': 'Y',    'Ъ': '',
 		'Э': 'E',    'Ю': 'Yu',   'Я': 'Ya'
 	}; 
-	for (var i = 0; i < word.length; ++i ) {
-		if (converter[word[i]] == undefined){
-			answer += word[i];
-		} else {
-			answer += converter[word[i]];
-		}
+	for (const element of word) {
+		answer += (converter[element] === undefined) ? element : converter[element]
 	} 
 	return answer;
 }
